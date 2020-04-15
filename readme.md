@@ -12,7 +12,7 @@ If you want to test this Pokedex on any device, check [Demo version](https://cmn
 node-sass
 autoprefixer
 concat
-post-css-cli
+postcss-cli
 npm-run-all
 ```
 
