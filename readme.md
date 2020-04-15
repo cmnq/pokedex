@@ -60,9 +60,10 @@ I don't have knowledge about unit testing yet. But chill, im on a good way to le
 
 
 ## Conclusion
-Wiem, że nie jest to najbardziej perfekcyjna wersja pokedexu.
+I know this is not the most perfect version of pokedex.
 
-Na każdy problem starałem się znaleźć własny sposób na rozwiązanie i wiem, że w niektórych przypadkach możnaby było zrobić coś lepiej - nie jestem jeszcze wybitnym, ale kiedyś będę!
-Niestety wiem też, że ogólna wydajność strony nie jest najlepsza. 
+On every problem I tried to find solution on my own way and solve the problem, and I know that in this app you could do something better - I'm not outstanding yet, but someday I will!
+Unfortunately, I also know that overall site performance is not the best.
 
+p.s
 Gotta catchem all!
