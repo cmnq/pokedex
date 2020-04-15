@@ -107,6 +107,7 @@ function removeAll() {
   }
 }
 
+/// PAGINATION BETWEEN POKE GENERATIONS 
 
 function buttonClicked(val) {
 
@@ -144,5 +145,5 @@ function buttonClicked(val) {
 
 buttonClicked();
 
-//initial call
+//// INITIAL CALL
 fetchPokemon(0, 151);

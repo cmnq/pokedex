@@ -1,23 +1,23 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer__img {
-    width: 20%;
+  width: 20%;
 }
 
 .footer__link {
-   text-decoration: none;
-   transition: all .2s;
-   color: #6890f0;
+  text-decoration: none;
+  transition: all 0.2s;
+  color: #6890f0;
 }
 
 .footer__link:hover,
 .footer__link:active {
-    color: #7e7475;
+  color: #7e7475;
 }
