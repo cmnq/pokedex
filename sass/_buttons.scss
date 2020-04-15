@@ -1,5 +1,5 @@
 .btn {
-  padding: .6rem;
+  padding: 0.6rem;
   margin: 1rem;
   color: white;
   font-family: "Press Start 2P", sans-serif;
@@ -12,15 +12,23 @@
   border-top: 3px solid #adabab;
   border-bottom: 3px solid #000000;
   outline: none;
-  box-shadow: 3px 3px 2px rgba(0,0,0,0.5);
-    &:hover{
-        transform: translateY(-2px);
-        box-shadow: 4px 4px 2px rgba(0,0,0,0.5);
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      font-size: 0.7rem;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  &:hover {
+    transform: translateY(-2px);
+    
+    @media only screen and (max-width: $bp-small) {
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 0.7rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  }
+  @media only screen and (max-width: $bp-small) {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
+}
 }
 
 .all {
@@ -32,6 +40,12 @@
   background-color: #78c850;
   border-top: 3px solid #c1fb53;
   border-bottom: 3px solid #48712f;
+}
+
+.flying {
+  background-color: #ac92f8;
+  border-top: 3px solid #c6bcf9;
+  border-bottom: 3px solid #5d4286;
 }
 
 .fire {
