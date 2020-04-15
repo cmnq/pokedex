@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+<body>
+
+
+    <header class="header">
+        <img src="img/logo.png" alt="Pokemon logo" class="header__logo">
+        <ul class="header__tags">
+            <li class="header__tag all" data-target="all">show all</li>
+            <li class="header__tag grass" data-target="grass">grass</li>
+            <li class="header__tag fire" data-target="fire">fire</li>
+            <li class="header__tag ghost" data-target="ghost">ghost</li>
+            <li class="header__tag fighting" data-target="fighting">fighting</li>
+            <li class="header__tag poison" data-target="poison">poison</li>
+            <li class="header__tag electric" data-target="electric">electric</li>
+            <li class="header__tag psychic" data-target="psychic">psychic</li>
+            <li class="header__tag fairy" data-target="fairy">fairy</li>
+            <li class="header__tag water" data-target="water">water</li>
+            <li class="header__tag dragon" data-target="dragon">dragon</li>
+            <li class="header__tag dark" data-target="dark">dark</li>
+            <li class="header__tag normal" data-target="normal">normal</li>
+            <li class="header__tag ice" data-target="ice">ice</li>
+            <li class="header__tag bug" data-target="bug">bug</li>
+            <li class="header__tag steel" data-target="steel">steel</li>
+        </ul>
+        <div class="header__pagination">
+            <button class="btn gen1" id="gen1" value="gen1"  onclick="buttonClicked(this.value)">GEN I</button>
+            <button class="btn gen2" id="gen2"  value="gen2"  onclick="buttonClicked(this.value)">GEN II</button>
+            <button class="btn gen3" id="gen3" value="gen3"  onclick="buttonClicked(this.value)">GEN III</button>
+            <button class="btn gen4" id="gen4" value="gen4"  onclick="buttonClicked(this.value)">GEN IV</button>
+            <button class="btn gen5" id="gen5" value="gen5"  onclick="buttonClicked(this.value)">GEN V</button>
+            <button class="btn gen6" id="gen6" value="gen6"  onclick="buttonClicked(this.value)">GEN VI</button>
+            <button class="btn gen7" id="gen7" value="gen7"  onclick="buttonClicked(this.value)">GEN VII</button>
+            <button class="btn gen8" id="gen8" value="gen8"  onclick="buttonClicked(this.value)">GEN VIII</button>
+        </div> 
+    </header>
+
+<div class="cards__container"  id="list o" >
+     <!-- <div class="cards__card" data-id="grass">
+        <div class="cards__image">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+        </div>
+        <div class="cards__text">
+            <span class="cards__text-hp"> <img src="https://img.icons8.com/ios-filled/50/000000/pixel-heart.png" class="cards__text-icon"> 200HP <span>
+            <span class="cards__text-ad"> <img src="https://img.icons8.com/metro/26/000000/minecraft-sword.png"class="cards__text-icon"> 65ATK</span>
+            <span class="cards__text-def"><img src="https://img.icons8.com/dotty/80/000000/shield.png" class="cards__text-icon"> 50DEF</span>
+            <h2 class="cards__text-name">Bulbasaur</h2>
+        </div>
+        <p class="cards__id">#001</p>
+        <div class="grass">
+            <p class="type">grass</p>
+        </div>
+    </div>  -->
+    
+</div>
+<footer class="footer">
+    <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" class="footer__img">
+    <p class="footer__copyright">Pokedex source code is <a href="http://cmnq.github.io/cmnq"class="footer__link">here</a> powered by <a href="http://pokeapi.co" class="footer__link">PokeApi&copy;</a>
+    </p>
+    </footer>
+    <script src="pokedex.js"></script>
+
+</html>

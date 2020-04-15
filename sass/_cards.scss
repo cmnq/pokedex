@@ -1,0 +1,118 @@
+.cards{
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @media only screen and (mix-width: $bp-largest) {
+            margin-left: 8%;
+            margin-right: 8%;
+           }
+           @media only screen and (max-width: $bp-large) {
+            margin-left: 5%;
+            margin-right: 5%;
+            }
+        @media only screen and (max-width: $bp-medium) {
+         margin-left: 2%;
+         margin-right: 2%;
+        }
+        @media only screen and (max-width: $bp-small) {
+            margin: 0;
+           }
+        
+
+
+
+    }
+
+    &__card{
+        display: grid;
+        grid-template-columns: minmax(0, 300px);
+        grid-template-rows: 13rem 8.5rem 4rem 8rem;
+        grid-template-areas: "image" "text" "id" "type";
+        border-top-left-radius: 1.8rem;
+        border-top-right-radius: 1.8rem;
+        overflow: hidden;
+        background: white;
+        margin: 1rem;
+        margin-bottom: 2.5rem;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        text-align: center;
+        transition: all .4s;
+        @media only screen and (min-width: $bp-largest) {
+            grid-template-columns: minmax(0, 300px);
+            grid-template-rows: 13rem 8.5rem 4rem 8rem;
+           }
+        @media only screen and (max-width: $bp-large) {
+            grid-template-columns: minmax(0, 200px);
+        grid-template-rows: 12rem 6.5rem 2rem 6rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: minmax(0, 200px);
+        grid-template-rows: 13rem 6.5rem 2rem 6rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: minmax(0, 325px);
+            grid-template-rows: 17rem 6.5rem 4rem 6rem;
+           }
+
+
+        &:hover{
+            transform: translateY(-1.5rem);
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.9);
+        }
+
+        &:active{
+            transform: translateY(-1rem);
+            box-shadow: 4px 4px 12px rgba(0,0,0,0.9);
+        }
+    }
+
+    &__image{
+        grid-area: image;
+        img{
+            width: 45%;
+        }
+    }
+
+    &__text{
+        grid-area: text;
+        font-size: 1rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: .5rem;
+            }
+        &-name{
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            @media only screen and (max-width: $bp-large) {
+                font-size: 2.2rem;
+                   }
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.8rem;
+                }
+                @media only screen and (max-width: $bp-small) {
+                    font-size: 2.5rem;
+                   }
+        
+            
+        }
+        &-icon{
+            width: 4%;
+        }
+    }
+
+    &__id{
+        margin-top: 0;
+        font-size: 1.2rem;
+        grid-area: id;
+    }
+
+    &__stats{
+            grid-area: type;
+            align-items: center;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            color: white;
+    }
+}

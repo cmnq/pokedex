@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo{
+        width: 30%;
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 35%;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            width: 45%;
+        }
+    }
+
+    &__tags{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        
+        margin: 4rem 5rem;
+        @media only screen and (max-width: $bp-medium) {
+            margin: 2rem 2.5rem;
+            font-size: 40%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 0;
+           }
+    }
+
+    &__tag{
+        list-style: none;
+        padding: 6px;
+        margin: 8px;
+        font-size: 1.5rem;
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px #766d64;
+        margin-top: 1rem;
+        transition: all .2s;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.08);
+        }
+        &:active {
+            transform: scale(1.04);
+        }
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.5rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 4px;
+            padding: 3px;
+           }
+    }
+
+    &__pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+
+}
+}
+
