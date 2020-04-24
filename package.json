@@ -1,7 +1,7 @@
 {
   "name": "pokedex_v01",
   "version": "0.0.1",
-  "description": "simple pokedex for recruitment task, made on apicalls powered by pokeapi.co",
+  "description": "simple pokedex for recruitment task, powered by pokeapi.co",
   "main": "pokedex.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
